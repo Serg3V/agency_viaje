@@ -37,14 +37,7 @@
  <script src="/socket.io/socket.io.js"></script>
  <script>
     
-   let debounceTimeout;
-
-   function debounceSearch() {
-     clearTimeout(debounceTimeout);
-     debounceTimeout = setTimeout(() => {
-       search();
-     }, 300);
-   }
+  
    
    async function search() {
      const destination = document.getElementById('destination').value;
